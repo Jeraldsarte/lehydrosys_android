@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "458314659252",
+    "firebase_url": "https://lehydrosys-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lehydrosys",
+    "storage_bucket": "lehydrosys.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458314659252:android:8af416f8a31ad943c8eee1",
+        "android_client_info": {
+          "package_name": "com.example.lehydrosys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtklmQ7zhi2_uc73M6iWjNQ6yiclj-HUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LeHydroSys" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+
+        <!-- Tab colors -->
+        <item name="tabTextColor">@color/tabTextColorDark</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColorDark</item>
+        <item name="tabIndicatorColor">@color/tabIndicatorColorDark</item>
+
+        <!-- Navigation Drawer -->
+        <item name="navigationViewStyle">@style/Widget.NavigationView</item>
+
+        <!-- General settings -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryVariant</item>
+    </style>
+    <style name="Widget.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+    <item name="itemTextColor">@color/navItemTextColorDark</item>
+    <item name="itemIconTint">@color/navItemIconTintDark</item>
+</style>
+</resources>

@@ -1,0 +1,68 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark">
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- AppBar with Menu and Notifications -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:title="LeHydroSys"
+            app:titleTextColor="@color/colorOnPrimary"
+            app:navigationIconTint="@color/colorOnPrimary"
+            app:menu="@menu/top_menu">
+
+            <TextView
+                android:id="@+id/connection_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking..."
+                android:textColor="@color/colorOnPrimary"
+                android:layout_gravity="end"
+                android:drawablePadding="8dp"
+                android:textSize="14sp" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- TabLayout for Navigation -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSurfaceDark"
+            android:contentDescription="Navigation tabs for real-time data and graphs"
+            app:tabIndicatorColor="@color/tabIndicatorColorDark"
+            app:tabSelectedTextColor="@color/tabSelectedTextColorDark"
+            app:tabTextColor="@color/tabTextColorDark" />
+
+        <!-- ViewPager2 for Swipeable Pages -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer Menu -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorSurfaceDark"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/navItemTextColorDark"
+        app:itemIconTint="@color/navItemIconTintDark" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

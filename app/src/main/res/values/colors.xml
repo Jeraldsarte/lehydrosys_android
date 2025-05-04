@@ -1,0 +1,54 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#121212</color> <!-- Dark Gray -->
+    <color name="colorPrimaryVariant">#1F1F1F</color> <!-- Slightly lighter gray -->
+
+    <!-- Backgrounds -->    
+    <color name="colorBackgroundDark">#121212</color> <!-- Dark Gray -->
+    <color name="colorSurfaceDark">#1F1F1F</color> <!-- Slightly lighter gray -->
+    <color name="blackish_ash">#2B2B2B</color> <!-- Placeholder for blackish ash -->
+
+
+    <!-- Text Colors -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White -->
+    <color name="colorOnBackgroundDark">#FFFFFF</color> <!-- White -->
+    <color name="colorOnSurfaceDark">#FFFFFF</color> <!-- White -->
+    <color name="text_primary">#FFFFFF</color> <!-- Placeholder for primary text color -->
+
+
+    <!-- Tabs -->
+    <color name="tabTextColorDark">#B0B0B0</color> <!-- Light Gray -->
+    <color name="tabSelectedTextColorDark">#FFFFFF</color> <!-- White -->
+    <color name="tabIndicatorColorDark">#FFFFFF</color> <!-- White -->
+
+    <!-- Drawer Icons -->
+    <color name="navItemTextColorDark">#FFFFFF</color>
+    <color name="navItemIconTintDark">#FFFFFF</color>
+
+    <!-- Sensor Background Colors -->
+    <color name="sensor_bg_air_temp">#1E1E1E</color>
+    <color name="sensor_bg_humidity">#1E1E1E</color>
+    <color name="sensor_bg_water_temp">#1E1E1E</color>
+    <color name="sensor_bg_water_level">#1E1E1E</color>
+    <color name="sensor_bg_ph">#1E1E1E</color>
+    <color name="sensor_bg_tds">#1E1E1E</color>
+
+    <!-- Chart Backgrounds -->
+    <color name="temp_chart_bg">#1E1E1E</color>
+    <color name="temp_chart_grid">#333333</color>
+    <color name="humidity_chart_bg">#1E1E1E</color>
+    <color name="humidity_chart_grid">#333333</color>
+    <color name="water_temp_chart_bg">#1E1E1E</color>
+    <color name="water_temp_chart_grid">#333333</color>
+    <color name="water_level_chart_bg">#1E1E1E</color>
+    <color name="water_level_chart_grid">#333333</color>
+    <color name="ph_chart_bg">#1E1E1E</color>
+    <color name="ph_chart_grid">#333333</color>
+    <color name="tds_chart_bg">#1E1E1E</color>
+    <color name="tds_chart_grid">#333333</color>
+
+    <color name="black">#000000</color> <!-- Black -->
+    <color name="white">#FFFFFF</color> <!-- White -->
+    <color name="red">#FF0000</color> <!-- Red -->
+    <color name="green">#00FF00</color> <!-- Green -->
+</resources>

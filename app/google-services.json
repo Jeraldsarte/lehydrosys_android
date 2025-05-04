@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747335631586",
+    "project_id": "lehydrosys-48a62",
+    "storage_bucket": "lehydrosys-48a62.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747335631586:android:f2d13e93248aaa5cb554bb",
+        "android_client_info": {
+          "package_name": "com.example.lehydrosys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDawuHVGXIqAwAYe_tyb82Ro2Tie6R20sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

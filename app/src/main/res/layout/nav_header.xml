@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/blackish_ash"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/header_welcome"
+        android:text="@string/welcome"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Relay Controls -->
+    <LinearLayout
+        android:id="@+id/relay_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_relay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relay 1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_relay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relay 2"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

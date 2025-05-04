@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">LeHydroSys</string>
+    <string name="real_time_sensor_data">Real-Time Sensor Data</string>
+    <string name="title_activity_graph">graph_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="about_us" tools:ignore="ExtraTranslation">About Us</string>
+    <string name="contact_us" tools:ignore="ExtraTranslation">Contact Us</string>
+    <string name="notifications" tools:ignore="ExtraTranslation">Notifications</string>
+    <string name="air_temperature_c">Air Temperature: — °C</string>
+    <string name="humidity">Humidity: — %</string>
+    <string name="water_temp_c">Water Temp: — °C</string>
+    <string name="water_level_cm">Water Level: — cm</string>
+    <string name="ph_level">pH Level: —</string>
+
+    <string name="air_temperature">Air Temperature: %.2f °C</string>
+    <string name="humidity_d">Humidity: %.2f %%</string>
+    <string name="water_temperature">Water Temp: %.2f °C</string>
+    <string name="water_level">Water Level: %.2f cm</string>
+    <string name="ph_level_d">pH Level: %.2f</string>
+    <string name="tds">TDS: %.0f ppm</string>
+
+    <string name="relay1_on">Relay 1 ON</string>
+    <string name="relay1_off">Relay 1 OFF</string>
+    <string name="relay_1">Relay 1</string>
+    <string name="relay_2">Relay 2</string>
+    <string name="sensor_data_graphs">Sensor Data Graphs</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="welcome">Welcome</string>
+    <string name="checking">Checking...</string>
+
+</resources>

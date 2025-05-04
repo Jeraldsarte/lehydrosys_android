@@ -1,0 +1,25 @@
+# Android Studio specific
+*.iml
+.idea/
+.gradle/
+local.properties
+
+# Build output
+/build/
+.cxx/
+.externalNativeBuild/
+
+# Android test results
+/captures/
+
+# OS files
+.DS_Store
+
+# Log files
+*.log
+
+# Keystore files (if any)
+*.jks
+
+# Others
+.env
