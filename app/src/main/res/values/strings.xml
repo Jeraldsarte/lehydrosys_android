@@ -28,8 +28,8 @@
 
     <string name="relay1_on">Relay 1 ON</string>
     <string name="relay1_off">Relay 1 OFF</string>
-    <string name="relay_1">Relay 1</string>
-    <string name="relay_2">Relay 2</string>
+    <string name="relay_1">Misting pump</string>
+    <string name="relay_2">Nutrients solution pump</string>
     <string name="sensor_data_graphs">Sensor Data Graphs</string>
 
     <string name="open_drawer">Open Drawer</string>

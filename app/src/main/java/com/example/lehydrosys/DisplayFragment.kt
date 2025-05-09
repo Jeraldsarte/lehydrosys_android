@@ -1,7 +1,5 @@
 package com.example.lehydrosys
 
-import android.content.res.Configuration
-import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -17,6 +15,8 @@ import java.io.IOException
 import java.security.SecureRandom
 import java.security.cert.X509Certificate
 import javax.net.ssl.*
+import com.example.lehydrosys.notifications.HydroNotificationManager
+
 
 class DisplayFragment : Fragment() {
 
@@ -129,13 +129,12 @@ private fun applyThemeColors() {
             try {
                 val jsonData = JSONObject(payload)
 
-                // Assuming the API returns a JSON object with these fields
-                val airTemp = jsonData.optDouble("temperature", 0.0)
-                val humidity = jsonData.optDouble("humidity", 0.0)
-                val waterTemp = jsonData.optDouble("waterTemp", 0.0)
-                val waterLevel = jsonData.optDouble("distance", 0.0)
-                val ph = jsonData.optDouble("ph", 0.0)
-                val tds = jsonData.optDouble("tds", 0.0)
+                val airTemp = jsonData.optDouble("temperature", 0.0).toFloat()
+                val humidity = jsonData.optDouble("humidity", 0.0).toFloat()
+                val waterTemp = jsonData.optDouble("waterTemp", 0.0).toFloat()
+                val waterLevel = jsonData.optDouble("distance", 0.0).toFloat()
+                val ph = jsonData.optDouble("ph", 0.0).toFloat()
+                val tds = jsonData.optDouble("tds", 0.0).toFloat()
 
                 txtAirTemp.text = getString(R.string.air_temperature, airTemp)
                 txtHumidity.text = getString(R.string.humidity_d, humidity)
@@ -144,12 +143,24 @@ private fun applyThemeColors() {
                 txtPh.text = getString(R.string.ph_level_d, ph)
                 txtTds.text = getString(R.string.tds, tds)
 
+                // 🔔 Check and trigger notifications
+                HydroNotificationManager.checkSensorDataAndNotify(
+                    context = requireContext(),
+                    temperature = airTemp,
+                    humidity = humidity,
+                    waterTemp = waterTemp,
+                    ph = ph,
+                    tds = tds,
+                    waterLevel = waterLevel
+                )
+
             } catch (e: Exception) {
                 e.printStackTrace()
                 showToast("Error parsing server data")
             }
         }
     }
+
 
     private fun getSecureOkHttpClient(): OkHttpClient {
         val trustAllCertificates = object : X509TrustManager {

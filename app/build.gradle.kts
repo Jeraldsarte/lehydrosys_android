@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services")
 }
 
 
@@ -67,10 +66,8 @@ dependencies {
     implementation ("com.google.android.material:material:1.9.0")
     implementation ("com.squareup.okhttp3:okhttp:4.10.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
-    implementation ("com.google.firebase:firebase-messaging:23.2.1")
-    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
-    implementation("com.google.firebase:firebase-analytics")
-    //implementation("com.github.hannesa2:paho.mqtt.android:4.3.0")
+
+
 
 
 
